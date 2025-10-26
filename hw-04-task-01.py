@@ -20,7 +20,8 @@ def total_salary(path: str):
         print(f"An error occurred: {ex}")
     
     finally:
-        return total_salary, average_salary
+        return total_salary, round(average_salary, 2) 
+        #round to 2 digits, because it's money
     
 
 total, average = total_salary("data/salaries.txt")
